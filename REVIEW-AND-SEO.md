@@ -38,3 +38,13 @@ The useful patterns were clear service navigation, prominent shipment actions, e
 | Contact | Preparing shipment requirements |
 
 This is a general logistics content strategy. No keyword-volume estimates, backlink assessment or competitive ranking difficulty study was performed. Local SEO requires confirmed operating locations, service coverage and contact details. Implementation improves content clarity and crawlability; it does not guarantee indexing, rankings or enquiries.
+
+## Follow-up: visual refinement and legal pages
+- Bolder, two-line hero with a visitor-controlled choice between freight and supply-chain needs.
+- Ship and aircraft composition, route details, more depth in the service cards and clearer interactive states.
+- Website Terms & Conditions and Privacy Policy drafts with table-of-contents navigation and clear version status.
+- Legal links in the footer of every page and beside the shipment forms.
+- Policy wording grounded in the actual local brief generator, demonstration tracking and lack of analytics/storage in the supplied code.
+- Legal drafts deliberately marked noindex and excluded from the sitemap until company and deployment details are completed.
+
+Drafting references: ICO privacy-notice guidance (https://ico.org.uk/for-organisations/advice-for-small-organisations/privacy-notices-and-cookies/how-to-write-a-privacy-notice-and-what-goes-in-it) and FIATA's explanation of the need to tailor service agreements to business models and applicable law (https://fiata.org/n/model-rules-on-freight-forwarding-services-update/). These references do not establish the operator's jurisdiction, accreditation or compliance.

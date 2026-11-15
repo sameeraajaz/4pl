@@ -1,4 +1,4 @@
-# 4PL — Logistics. In sync.
+# 4PL — Connected logistics
 
 A responsive, multi-page logistics website in orange, white and deep blue. Plain HTML, CSS and JavaScript, with custom SVG illustrations and locally bundled fonts. No build tool, framework, third-party runtime, API key or external asset host is required.
 
@@ -12,6 +12,8 @@ A responsive, multi-page logistics website in orange, white and deep blue. Plain
 - `/contact`
 - `/insights/3pl-vs-4pl`
 - `/insights/freight-shipping-checklist`
+- `/privacy-policy` — draft website privacy notice, noindex until completed and approved
+- `/terms-and-conditions` — draft website terms, noindex until completed and approved
 - `/404` — not-found page, excluded from sitemap and marked noindex
 
 ## Deploy to Vercel
@@ -29,6 +31,7 @@ Use a static server with clean URL resolution for `.html` files. For example, `n
 ## Working interactions
 - Responsive navigation, service-page links and cross-links between related content.
 - A homepage planner that transfers the selected mode, origin and destination into the shipment form.
+- A hero selector for individual freight or wider supply-chain needs, which sets the relevant enquiry type.
 - Shipment forms with native validation and a locally generated downloadable brief.
 - Accessible industry tabs with arrow-key, Home and End navigation.
 - Native expandable FAQs.
@@ -41,6 +44,13 @@ Use a static server with clean URL resolution for `.html` files. For example, `n
 Unique titles and descriptions, canonical links, one H1 per page, semantic HTML, crawlable links, contextual service copy, FAQs, Organization/WebSite/WebPage/Service/BreadcrumbList JSON-LD, sitemap.xml, robots.txt, favicon and Open Graph/Twitter sharing image. Content and links are present in the HTML and do not depend on JavaScript to be indexed.
 
 No keyword stuffing, fake locations, fabricated ratings, invented client logos, unsupported coverage figures, performance promises or certification claims are included. FAQ content is provided for readers; no promise of Google FAQ rich results is made.
+
+## Legal pages
+The Terms & Conditions cover website use and planning tools, rather than establishing freight-service trading conditions. The Privacy Policy describes the current local-only forms and demonstration tracking, and distinguishes that behaviour from potential hosting records. Both pages are linked in the footer and beside the shipment forms.
+
+They are visibly marked as drafts and excluded from the sitemap and search indexing until the operator’s registered details, address, jurisdiction, privacy contact and actual deployment/data-handling arrangements are confirmed. Review them for the applicable business and law before public release. No legal jurisdiction, liability cap, FIATA adoption or compliance certification has been invented.
+
+See FORMS.md for current form behaviour and what is needed to receive live enquiries.
 
 ## Before public launch
 - Confirm that the draft service descriptions match the company's actual scope and operating model.
