@@ -1,68 +1,63 @@
-# 4PL — Connected logistics
+# 4PL — Next.js / Vercel project
 
-A responsive, multi-page logistics website in orange, white and deep blue. Plain HTML, CSS and JavaScript, with custom SVG illustrations and locally bundled fonts. No build tool, framework, third-party runtime, API key or external asset host is required.
-
-## Pages
-- `/` — homepage, shipment planner, solutions, 4PL positioning, industries, FAQs and guides
-- `/services/ocean-freight`
-- `/services/air-freight`
-- `/services/road-transport`
-- `/services/4pl-supply-chain-management`
-- `/about`
-- `/contact`
-- `/insights/3pl-vs-4pl`
-- `/insights/freight-shipping-checklist`
-- `/privacy-policy` — draft website privacy notice, noindex until completed and approved
-- `/terms-and-conditions` — draft website terms, noindex until completed and approved
-- `/404` — not-found page, excluded from sitemap and marked noindex
+This is the complete Next.js project. Extract and upload **all files and folders** from this ZIP into your Git repository. The ZIP root contains `package.json`, `app/`, `public/`, `components/`, `data/`, `lib/` and `vercel.json`. There is no outer wrapper folder.
 
 ## Deploy to Vercel
-1. Extract this archive and push the contents of `4pl-website` to a Git repository.
-2. Import the repository into Vercel.
-3. Choose the **Other** framework preset, leave the Build Command empty and use the repository root as the output directory.
-4. Deploy. `vercel.json` enables clean URLs and trailing-slash normalization.
-5. When ready, connect the `4pl.com` domain through the project's Domains settings and complete the provided DNS instructions.
+1. Replace the previous static-only repository contents with the complete contents of this ZIP. Retain the repository’s Git history.
+2. In Vercel, import that repository or redeploy the existing project.
+3. **Framework Preset: Next.js**.
+4. **Root Directory: the folder containing package.json** (repository root if you uploaded the ZIP contents directly).
+5. **Install Command: npm ci**. **Build Command: npm run build**. `vercel.json` already sets both.
+6. Clear any old **Output Directory override** such as `.`, `dist` or `public`; use the Next.js framework default.
+7. Deploy. This project runs `next build` and serves its assets from `public/assets`.
 
-Canonical URLs, structured data, the sitemap and social sharing URLs currently use `https://4pl.com`. Change them consistently if the production hostname changes. Avoid indexing a separate preview hostname as the production site.
+Do not deploy only an HTML file, do not omit `public/`, and do not set `public/` as the project Root Directory. A successful build requires the public images, script and fonts; the asset check fails early when any are missing.
 
-## Preview locally
-Use a static server with clean URL resolution for `.html` files. For example, `npx serve .` from this directory. Opening `index.html` directly as a local file will not resolve root-relative navigation and asset URLs.
+## Local use
+```
+npm ci
+npm run dev
+```
+Production check:
+```
+npm run build
+npm start
+```
 
-## Working interactions
-- Responsive navigation, service-page links and cross-links between related content.
-- A homepage planner that transfers the selected mode, origin and destination into the shipment form.
-- A hero selector for individual freight or wider supply-chain needs, which sets the relevant enquiry type.
-- Shipment forms with native validation and a locally generated downloadable brief.
-- Accessible industry tabs with arrow-key, Home and End navigation.
-- Native expandable FAQs.
-- Labelled quote and tracking dialogs with native keyboard focus handling and Escape-to-close.
-- Demo tracking reference: `4PL-DEMO-001`.
-- Plain-text shipping checklist download.
-- Reduced-motion preference support.
+## What changed
+The old live deployment served the homepage but returned 404 for `/assets/site.css`, `/assets/site.js` and `/assets/ship.svg`. The new Next.js layout imports the global stylesheet into the build, Next manages the compiled CSS URLs, and all illustrations/fonts/scripts are included under `public/assets`. The assets are verified before the production build starts.
 
-## SEO foundation
-Unique titles and descriptions, canonical links, one H1 per page, semantic HTML, crawlable links, contextual service copy, FAQs, Organization/WebSite/WebPage/Service/BreadcrumbList JSON-LD, sitemap.xml, robots.txt, favicon and Open Graph/Twitter sharing image. Content and links are present in the HTML and do not depend on JavaScript to be indexed.
+## Pages and behaviour
+Includes the current responsive homepage, four service pages, About, Contact/shipment brief, two logistics guides, draft Privacy Policy and draft Terms & Conditions, custom 404, metadata, structured data, robots and sitemap. Content is delivered as prerendered server output. Existing native anchors perform full page navigation so the local interaction script initializes for each page. There are no external API, font or illustration dependencies at runtime.
 
-No keyword stuffing, fake locations, fabricated ratings, invented client logos, unsupported coverage figures, performance promises or certification claims are included. FAQ content is provided for readers; no promise of Google FAQ rich results is made.
+Forms default to local downloadable text briefs. Optional SMTP enquiry submission is now implemented server-side and remains disabled until explicitly enabled and configured. It does not save leads to a CRM, calculate prices or book transport. See EMAIL-SETUP.md. Tracking now has a dedicated responsive React page at `/track-shipment`, with separate ocean, air and road samples, a route summary, shipment details and a milestone timeline. It remains a labelled local demonstration. See FORMS.md. Policy drafts remain noindex until the company and data-handling details are completed and reviewed.
 
-## Legal pages
-The Terms & Conditions cover website use and planning tools, rather than establishing freight-service trading conditions. The Privacy Policy describes the current local-only forms and demonstration tracking, and distinguishes that behaviour from potential hosting records. Both pages are linked in the footer and beside the shipment forms.
+The canonical production domain remains `https://4pl.com.pk`; update `metadataBase`, the page-content structured data, robots and sitemap consistently if you choose a different production domain. The default download/demo mode needs no secrets. Optional email enquiries require the server-side SMTP settings described in EMAIL-SETUP.md.
 
-They are visibly marked as drafts and excluded from the sitemap and search indexing until the operator’s registered details, address, jurisdiction, privacy contact and actual deployment/data-handling arrangements are confirmed. Review them for the applicable business and law before public release. No legal jurisdiction, liability cap, FIATA adoption or compliance certification has been invented.
+## Editing
+- Page content and JSON-LD: `data/pages.json` (trusted, version-controlled HTML; never interpolate untrusted content).
+- Shared rendering and SEO: `components/SitePage.tsx`, `lib/pages.ts`, `app/layout.tsx`.
+- Design: `app/globals.css`.
+- Shipment tracking UI: `components/ShipmentTracking.tsx` and `app/track-shipment/page.tsx`.
+- Shared tracking-page shell: `components/SiteShell.tsx`.
+- Other interactions: `public/assets/site.js`.
+- Illustrations, fonts and brand files: `public/assets/`.
 
-See FORMS.md for current form behaviour and what is needed to receive live enquiries.
+## Before launch
+Confirm the company's actual service scope, legal name, address, operating coverage and privacy contact. Connect live enquiries and carrier tracking separately if required. The legal pages are website drafts, not freight service contracts or a claim of jurisdiction-specific compliance.
 
-## Before public launch
-- Confirm that the draft service descriptions match the company's actual scope and operating model.
-- Add verified company name, business contacts, office details, coverage, service restrictions and approved evidence of experience.
-- Once locations are confirmed, develop useful location-specific content and appropriate business schema. Do not create repetitive city pages or invent an address.
-- Connect forms to a secure backend or CRM if enquiries should be submitted. They currently only prepare local download files. Replace the preview notices when live behavior is connected.
-- Connect tracking to the actual transport-management or carrier systems. The current demonstration does not return live shipment data and its sample route does not assert coverage.
-- Confirm privacy/legal notices for the actual data collection, analytics and integrations before enabling them.
-- Verify domain ownership, submit the sitemap in Search Console and inspect live indexing and page performance after deployment.
+## Tracking
+See TRACKING.md for the demo references and the data connection needed for real shipment updates. Header and footer tracking links now open `/track-shipment`; the earlier tracking dialog has been removed. Service cards also have more consistent spacing and aligned actions.
 
-## Validation
-Structural checks covered every page, local route and asset reference, canonical links, unique metadata, JSON-LD, image dimensions/alt text, ARIA targets, sitemap entries and SVG validity. DOM-based interaction tests passed for all page initializations, navigation, tracking, planner-to-form handoff, validation, safe brief generation and keyboard tabs. Offline layout renders were reviewed at desktop, 390px and 320px widths; these are not a substitute for a final live-browser/device pass on deployment.
+## Animated hero and optional email enquiries
+The homepage now has three seamless, continuously looping wave layers behind the ship. Reduced-motion preferences disable the animation.
 
-## Font licenses
-DM Sans and Manrope are bundled under the SIL Open Font License. License texts are in `assets/fonts`.
+The email endpoint is `/api/enquiries` (GET reports readiness only; POST accepts an enquiry when configured). SMTP code is in `lib/enquiries.ts`, and a blank `.env.example` lists the settings. The endpoint and UI were verified with mocks; configure your actual provider and perform an authorised delivery test before relying on it.
+
+
+## Brand and business details
+Production URL: https://4pl.com.pk . Company: 4PL LOGISTICS PVT LTD. Office # 310, 3rd Floor, Falak Corporate City, Talpur Road Near NBP head Office, Karachi - Pakistan. PABX: 021-32400773-74. Email: info@4pl.com.pk. Directions and Instagram links use the owner-supplied destinations. The supplied logo is used in the header/footer, favicon and share image. All contact information is based on the owner’s supplied details; the office address is not represented as a verified registered address.
+
+Bright orange uses dark navy text; smaller orange text uses a darker orange for contrast. Rich blue panels use light text. Decorative curved transitions and animated waves respect reduced-motion preferences. Representative stock photography is identified and credited in PHOTO-CREDITS.md.
+
+Email delivery remains disabled until SMTP settings and ENQUIRIES_ENABLED=true are configured. Default enquiry recipient: info@4pl.com.pk. Legal pages remain drafts pending the actual provider, retention and applicable-terms review.
