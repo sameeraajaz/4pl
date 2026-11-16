@@ -61,3 +61,7 @@ Production URL: https://4pl.com.pk . Company: 4PL LOGISTICS PVT LTD. Office # 31
 Bright orange uses dark navy text; smaller orange text uses a darker orange for contrast. Rich blue panels use light text. Decorative curved transitions and animated waves respect reduced-motion preferences. Representative stock photography is identified and credited in PHOTO-CREDITS.md.
 
 Email delivery remains disabled until SMTP settings and ENQUIRIES_ENABLED=true are configured. Default enquiry recipient: info@4pl.com.pk. Legal pages remain drafts pending the actual provider, retention and applicable-terms review.
+
+
+## Human-focused design refinement
+A representative worker photo and direct Karachi phone link now appear in the hero. The homepage includes a photographic conversation section with three native keyboard-accessible disclosure panels. Each action opens the existing shipment form or contact page; the supply-chain action preselects the relevant service. About includes a Karachi office story and service sidebars offer direct phone/email contact. No staff identities, customer endorsements or response-time promises are invented. Subtle below-fold reveals are progressive enhancement and disabled for reduced motion. The original ship and looping waves remain.
