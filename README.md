@@ -56,7 +56,7 @@ The email endpoint is `/api/enquiries` (GET reports readiness only; POST accepts
 
 
 ## Brand and business details
-Production URL: https://4pl.com.pk . Company: 4PL LOGISTICS PVT LTD. Office # 310, 3rd Floor, Falak Corporate City, Talpur Road Near NBP head Office, Karachi - Pakistan. PABX: 021-32400773-74. Email: info@4pl.com.pk. Directions and Instagram links use the owner-supplied destinations. The supplied logo is used in the header/footer, favicon and share image. All contact information is based on the owner’s supplied details; the office address is not represented as a verified registered address.
+Production URL: https://4pl.com.pk . Company: 4PL LOGISTICS PVT LTD. Office # 709, 7th Floor, Falak Corporate City, Talpur Road Near NBP Head Office, Karachi-Pakistan. PABX: 021-32400773-74. Email: info@4pl.com.pk. Directions and Instagram links use the owner-supplied destinations. The supplied logo is used in the header/footer, favicon and share image. All contact information is based on the owner’s supplied details; the office address is not represented as a verified registered address.
 
 Bright orange uses dark navy text; smaller orange text uses a darker orange for contrast. Rich blue panels use light text. Decorative curved transitions and animated waves respect reduced-motion preferences. Representative stock photography is identified and credited in PHOTO-CREDITS.md.
 

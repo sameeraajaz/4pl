@@ -71,3 +71,26 @@ header{position:sticky;top:0;background:#fffffff5;backdrop-filter:blur(16px);bor
 @media(prefers-reduced-motion:reduce){.hero-route path{animation:none}.reveal-ready,.service-card,.service-art img{transition:none!important}.reveal-ready[data-in-view="false"]{opacity:1;transform:none}.service-card:hover,.service-card:hover .service-art img{transform:none}}
 
 .portrait-stamp>span{display:block;text-align:center}.journey-conversation button.text-link{appearance:none;background:transparent;border:0;border-bottom:1px solid #b7c9e0;padding:0 0 7px;color:var(--blue);font-family:inherit;cursor:pointer}.journey-conversation button.text-link:hover{border-bottom-color:var(--orange)}
+
+
+/* Client update 22 Nov 2026: supplied logo as the brand mark, warmer orange–amber accents from the logo and colour reference. */
+:root{--orange:#FF7A18;--orange-dark:#9A3412;--orange-heading:#C2410C}
+.hero{background:linear-gradient(105deg,#fff 30%,#fff6ea 100%)}
+.hero:before{background:linear-gradient(150deg,#fff3e0,#ffd59a 58%,#ffb15a)}
+.brand-artwork{width:68px;height:84px;max-width:none;object-fit:contain;background:#fff;border-radius:6px;box-shadow:0 0 0 1px #2a31431a}
+footer .brand-artwork{width:136px;height:168px;border-radius:8px}
+.btn{background:linear-gradient(180deg,#FFC857 0%,#FF7A18 100%);color:var(--navy)}
+.btn.navy{background:var(--navy);color:#fff}
+.btn:hover{background:#FF8C2A}
+.page-hero-art.vessel-hero{background:linear-gradient(165deg,#fffaf3,#ffe3bf);padding:16px 18px 34px}
+.page-hero-art.vessel-hero img{height:340px;width:100%;object-fit:contain}
+.footer-email{margin:0 0 12px;font-size:13px}
+.footer-email a{color:#ffe0c2;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:800px){
+  .brand-artwork{width:54px;height:68px}
+  footer .brand-artwork{width:108px;height:134px}
+  .nav{height:84px}
+  .navlinks{top:84px}
+  .page-hero-art.vessel-hero img{height:230px}
+}
+@media(max-width:360px){.brand-artwork{width:48px;height:60px}}
