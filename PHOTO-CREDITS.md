@@ -1,10 +1,16 @@
 # Photography and brand artwork
 
-The supplied 4PL logo is extracted from the user-provided PDF. Its artwork and original colours are preserved. The site extends it with rich blue surfaces, bright orange accents and white space. White panels preserve legibility of the original dark logo.
+The supplied 4PL logo is the client artwork. Header and footer are white so the logo stays readable. Orange is used for buttons, links and highlights.
 
-Representative stock photographs, not photographs of 4PL employees:
-- Warehouse collaboration: https://www.pexels.com/photo/workers-walking-along-aisle-in-warehouse-4487383/ (Tiger Lily)
-- Logistics planning: https://www.pexels.com/photo/men-standing-in-a-warehouse-talking-4480987/ (Tiger Lily)
-- Warehouse operations: https://www.pexels.com/photo/man-walking-in-a-warehouse-4480799/
+Git history has no earlier real ship, port, aircraft or truck photographs. The first site used SVG illustrations. Three warehouse photographs were already in the repo and are reused. New photographs are stored locally as WebP. Pages do not hotlink them.
 
-Pexels licence: https://www.pexels.com/license/ . Optimised local WebP versions are included; the pages do not load photographs from Pexels.
+Already in the repo (Pexels licence https://www.pexels.com/license/):
+- Warehouse collaboration: https://www.pexels.com/photo/4487383/
+- Logistics planning: https://www.pexels.com/photo/4480987/
+- Warehouse operations: https://www.pexels.com/photo/4480799/
+
+Added for the photo heroes, same Pexels licence:
+- Homepage and ocean-freight hero: https://www.pexels.com/photo/2226458/ (`public/assets/photos/port-ship.webp`)
+- Ocean service card: https://www.pexels.com/photo/1427107/ (`public/assets/photos/port-containers.webp`)
+- Air-freight hero and card: https://www.pexels.com/photo/912050/ (`public/assets/photos/air-cargo.webp`)
+- Road-transport hero and card: https://www.pexels.com/photo/2199293/ (`public/assets/photos/freight-truck.webp`)

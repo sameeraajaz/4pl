@@ -148,3 +148,46 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline-color:#fff}
 .conversation-call strong,.call-place{color:#1C140E}
 
 .menu{background:transparent;color:#fff;border-color:#fff}
+
+
+/* White header and footer; orange stays on buttons, links and highlights. Heroes are full-bleed photographs. */
+header,.topline{background:#fff;color:#1C140E;border-bottom:1px solid #F3D3BE}
+.topline{border-bottom:3px solid #C2410C}
+.navlinks a,.tracking-link,.tracking-link span,.brand-name,.brand .brand-name small,.menu{color:#1C140E}
+.navlinks a:hover,.navlinks a[aria-current=page],.tracking-link:hover{color:#C2410C;text-decoration:underline;text-underline-offset:4px}
+.menu{background:#fff;border-color:#E7CDB8;color:#1C140E}
+header .btn{background:#C2410C;color:#fff;border-color:#C2410C}
+header .btn:hover{background:#9A3412;color:#fff}
+.brand-artwork{background:#fff;box-shadow:none}
+footer{background:#fff;color:#1C140E;border-top:4px solid #C2410C}
+footer a,.footer-contact,.footer-contact a,.footer-links a,.footer-bottom,.footer-legal a,.footer-title,.footer-main p,footer address,.footer-address{color:#1C140E}
+.footer-contact a:hover,.footer-links a:hover,.footer-legal a:hover{color:#C2410C}
+.social-icon{color:#C2410C;border-color:#C2410C}
+.social-icon:hover{background:#C2410C;color:#fff}
+.photo-hero{position:relative;overflow:hidden;background-color:#1C140E;background-size:cover;background-position:center;color:#fff}
+.photo-hero:before{content:"";position:absolute;inset:0;width:100%;height:100%;left:0;right:0;top:0;clip-path:none;background:linear-gradient(90deg,rgba(16,10,6,.88) 0%,rgba(16,10,6,.68) 42%,rgba(16,10,6,.38) 100%);z-index:0}
+.photo-hero .hero-inner,.photo-hero .wrap,.photo-hero .page-hero-inner{position:relative;z-index:1}
+.photo-hero .hero-art,.photo-hero .page-hero-art{display:none}
+.photo-hero.page-hero .page-hero-inner{grid-template-columns:minmax(0,760px)}
+.photo-hero h1,.photo-hero h1 em,.photo-hero .hero-text,.photo-hero .hero-text>p,.photo-hero .eyebrow,.photo-hero .intro,.photo-hero .breadcrumbs,.photo-hero .breadcrumbs a,.photo-hero .text-link,.photo-hero .hero-human,.photo-hero .hero-human strong,.photo-hero .hero-human a{color:#fff}
+.photo-hero .eyebrow:before{background:#FFB067}
+.photo-hero .text-link{border-bottom-color:rgba(255,255,255,.8)}
+.photo-hero .btn,.photo-hero.hero .btn{background:#C2410C;color:#fff;border-color:#C2410C}
+.photo-hero .btn:hover{background:#9A3412;color:#fff}
+.photo-hero .hero-mode{background:rgba(255,255,255,.16)}
+.photo-hero .hero-mode button{color:#fff}
+.photo-hero .hero-mode button[aria-pressed=true]{background:#fff;color:#1C140E}
+.service-art:has(img.photo):before{display:none}
+.service-art img.photo{width:100%;height:100%;object-fit:cover}
+@media(max-width:800px){
+  .photo-hero:before{background:linear-gradient(180deg,rgba(16,10,6,.82) 0%,rgba(16,10,6,.55) 70%,rgba(16,10,6,.35) 100%)}
+  .navlinks a,.navlinks .mobile-tracking-nav,.navlinks .tracking-link{color:#1C140E}
+  .menu{background:#fff;color:#1C140E}
+}
+
+/* Footer wordmark and leftover light-on-dark colours, now that the footer is white. */
+footer .brand-name,footer .brand-name small,footer .footer-links button{color:#1C140E}
+.footer-bottom{color:#1C140E;border-top-color:#E4D3C4}
+.footer-bottom i{color:#C2410C}
+.footer-email a{color:#9A3412}
+.footer-links button:hover{color:#C2410C}
