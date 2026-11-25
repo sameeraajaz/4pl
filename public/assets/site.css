@@ -184,3 +184,10 @@ footer a,.footer-contact,.footer-contact a,.footer-links a,.footer-bottom,.foote
   .navlinks a,.navlinks .mobile-tracking-nav,.navlinks .tracking-link{color:#1C140E}
   .menu{background:#fff;color:#1C140E}
 }
+
+/* Footer wordmark and leftover light-on-dark colours, now that the footer is white. */
+footer .brand-name,footer .brand-name small,footer .footer-links button{color:#1C140E}
+.footer-bottom{color:#1C140E;border-top-color:#E4D3C4}
+.footer-bottom i{color:#C2410C}
+.footer-email a{color:#9A3412}
+.footer-links button:hover{color:#C2410C}
