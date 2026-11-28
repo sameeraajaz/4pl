@@ -223,16 +223,8 @@ footer a,.footer-contact,.footer-contact a,.footer-links a,.footer-bottom,.foote
 .footer-email a{color:#0F2A5C;text-decoration-color:#F36F21}
 .social-icon{color:#0F2A5C;border-color:#F36F21;background:#fff}
 .social-icon:hover{background:#F36F21;color:#0F2A5C;border-color:#F36F21}
-.btn{background:#F36F21;color:#0F2A5C;border-color:#F36F21}
-.btn:hover{background:#0F2A5C;color:#fff;border-color:#0F2A5C}
-.btn.navy{background:#F36F21;color:#0F2A5C;border-color:#F36F21}
-.btn.navy:hover{background:#0F2A5C;color:#fff;border-color:#0F2A5C}
-.btn.white{background:#fff;color:#0F2A5C;border-color:#fff}
-.btn.white:hover{background:#0F2A5C;color:#fff}
-header .btn,.photo-hero .btn,.photo-hero.hero .btn{background:#F36F21;color:#0F2A5C;border-color:#F36F21}
-header .btn:hover,.photo-hero .btn:hover,.photo-hero.hero .btn:hover{background:#0F2A5C;color:#fff;border-color:#0F2A5C}
-.planner .btn,.connected .btn,.cta .btn{background:#fff;color:#0F2A5C;border-color:#fff}
-.planner .btn:hover,.connected .btn:hover,.cta .btn:hover{background:#0F2A5C;color:#fff;border-color:#0F2A5C}
+.btn,.btn.navy,.btn.white,header .btn,.photo-hero .btn,.photo-hero.hero .btn,.planner .btn,.connected .btn,.cta .btn,.modal .btn,.contact-form .btn{background:linear-gradient(180deg,#FF8A00 0%,#FF6A13 100%);color:#fff;border-color:transparent;font-weight:700;box-shadow:0 8px 18px #FF6A1359}
+.btn:hover,.btn.navy:hover,.btn.white:hover,header .btn:hover,.photo-hero .btn:hover,.photo-hero.hero .btn:hover,.planner .btn:hover,.connected .btn:hover,.cta .btn:hover,.modal .btn:hover,.contact-form .btn:hover{background:#F25C05;color:#fff;border-color:transparent;box-shadow:0 6px 14px #F25C0566}
 .connected{background:linear-gradient(165deg,#FFC14A 0%,#F36F21 78%);color:#0F2A5C}
 .connected h2,.connected .lead,.connected .text-link,.connected .eyebrow,.value-row p,.value-row h3,.value-number{color:#0F2A5C}
 .connected .text-link{border-bottom-color:#0F2A5C}
