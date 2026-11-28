@@ -58,7 +58,7 @@ The email endpoint is `/api/enquiries` (GET reports readiness only; POST accepts
 ## Brand and business details
 Production URL: https://4pl.com.pk . Company: 4PL LOGISTICS PVT LTD. Office # 709, 7th Floor, Falak Corporate City, Talpur Road Near NBP Head Office, Karachi-Pakistan. Mobile: +92 307 252 4519. PABX: 021-32411028 / 021-32411029. Email: info@4pl.com.pk. Directions and Instagram links use the owner-supplied destinations. The supplied logo is used in the header/footer, favicon and share image. All contact information is based on the owner’s supplied details; the office address is not represented as a verified registered address.
 
-Bright orange uses dark navy text; smaller orange text uses a darker orange for contrast. Rich blue panels use light text. Decorative curved transitions and animated waves respect reduced-motion preferences. Representative stock photography is identified and credited in PHOTO-CREDITS.md.
+Bright orange (#F36F21) is the primary accent. Navy (#0F2A5C) is the secondary colour and the text colour on orange, because white on #F36F21 does not meet WCAG AA. Large orange headings use #E86521 so they clear 3:1. Rich blue panels use light text. Decorative curved transitions and animated waves respect reduced-motion preferences. Representative stock photography is identified and credited in PHOTO-CREDITS.md.
 
 Email delivery remains disabled until SMTP settings and ENQUIRIES_ENABLED=true are configured. Default enquiry recipient: info@4pl.com.pk. Legal pages remain drafts pending the actual provider, retention and applicable-terms review.
 
